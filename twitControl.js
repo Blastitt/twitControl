@@ -47,7 +47,7 @@ Module.register("twitControl",{
 		for(var t in this.tweets){
 			
 				var tweetElement = document.createElement("div");
-				tweetElement.className = "bright medium light compact";
+				tweetElement.className = "bright medium light";
 				tweetElement.innerHTML = this.tweets[t].text;
 				
 				var author = document.createElement("div");
