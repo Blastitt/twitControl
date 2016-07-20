@@ -15,6 +15,7 @@ Twitter Interface module for MagicMirror<sup>2</sup>
 			module: 'twitControl',
 			position: 'top_left',
 			config: {
+				maxNumTweets: 5,
 				api_keys: {
 					consumer_key: 'YOUR CONSUMER KEY',
 					consumer_secret: 'YOUR CONSUMER SECRET',
@@ -25,3 +26,7 @@ Twitter Interface module for MagicMirror<sup>2</sup>
 		},
 ```
  
+## Config
+| **Option** | **Description** |
+| --- | --- |
+| `maxNumTweets` | The maximum number of tweets to display at any given time.  (0 for unlimited) |
