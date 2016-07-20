@@ -2,6 +2,7 @@ Module.register("twitControl",{
 
 	// Default module config.
 	defaults: {
+		maxNumTweets: 0,
 		api_keys: {
 			consumer_key: '',
 			consumer_secret: '',
@@ -13,6 +14,9 @@ Module.register("twitControl",{
 	start: function() {
 		Log.info(this.config);
 		Log.info("Starting module: " + this.name);
+		if(this.config.maxNumTweets < 1){
+			this.config.maxNumTweets = 0;
+		}
 		this.startStream();
 	},
 	
@@ -32,6 +36,9 @@ Module.register("twitControl",{
 			if(payload.text != null){
 				payload.date = new Date();
 				this.tweets.push(payload);
+				if(this.tweets.length > this.config.maxNumTweets && this.config.maxNumTweets != 0){
+					this.tweets.splice(0, 1);
+				}
 				this.updateDom(2.5 * 1000);
 			}
 		}
