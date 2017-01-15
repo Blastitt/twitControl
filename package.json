@@ -1,0 +1,11 @@
+{
+  "name": "twitControl",
+  "version": "1.0.0",
+  "description": " Twitter Interface module for MagicMirror2",
+  "main": "twitControl.js",
+  "author": "Blastitt",
+  "license": "MIT",
+  "dependencies": {
+    "user-stream": "latest"
+  }
+}

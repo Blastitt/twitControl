@@ -4,11 +4,12 @@ Twitter Interface module for MagicMirror<sup>2</sup>
 ## Dependencies
   * An installation of [MagicMirror<sup>2</sup>](https://github.com/MichMich/MagicMirror)
   * [Twitter Dev Access Tokens](https://dev.twitter.com/oauth/overview/application-owner-access-tokens)
-  * `npm install user-stream` in your `~/MagicMirror` directory
+  * The user-stream node module, installed in step 2 of Installation.
 
 ## Installation
  1. Clone this repo into your `modules` directory.
- 2. Configure your `config.js` file with your twitter access tokens:
+ 2. Execute `npm install` in this module's directory.
+ 3. Configure your `config.js` file with your twitter access tokens:
  
 ```
 		{
