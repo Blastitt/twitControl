@@ -3,6 +3,7 @@ Module.register("twitControl",{
 	// Default module config.
 	defaults: {
 		maxNumTweets: 0,
+		streamType: 'followings',
 		api_keys: {
 			consumer_key: '',
 			consumer_secret: '',
