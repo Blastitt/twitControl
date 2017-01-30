@@ -1,5 +1,7 @@
 # twitControl
-Twitter Interface module for MagicMirror<sup>2</sup>
+Twitter Interface module for MagicMirror<sup>2</sup>.
+
+**Note**: This module will only display tweets posted since the mirror was started.
 
 ## Dependencies
   * An installation of [MagicMirror<sup>2</sup>](https://github.com/MichMich/MagicMirror)
@@ -17,6 +19,7 @@ Twitter Interface module for MagicMirror<sup>2</sup>
 			position: 'top_left',
 			config: {
 				maxNumTweets: 5,
+				tweetType: 'followings',
 				api_keys: {
 					consumer_key: 'YOUR CONSUMER KEY',
 					consumer_secret: 'YOUR CONSUMER SECRET',
@@ -31,3 +34,4 @@ Twitter Interface module for MagicMirror<sup>2</sup>
 | **Option** | **Description** |
 | --- | --- |
 | `maxNumTweets` | The maximum number of tweets to display at any given time.  (0 for unlimited) |
+| `tweetType`	 | The type of tweets to receive. Can be `user` or `followings`. Check the Twitter API for more. |
