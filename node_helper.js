@@ -14,12 +14,12 @@ module.exports = NodeHelper.create({
 		console.log("Notification: " + notification + " Payload: " + payload);
 		
 		if(notification === "START_STREAM"){
-			this.startTwitterStream(payload.config.api_keys);
+			this.startTwitterStream(payload.config.api_keys, payload.config.streamType);
 		}
 		
 	},
 	
-	startTwitterStream: function(api_keys){
+	startTwitterStream: function(api_keys, streamType){
 		
 		var self = this;
 		
@@ -31,7 +31,7 @@ module.exports = NodeHelper.create({
 		});
 		
 		this.params = {
-			with: 'user',
+			with: streamType,
 			stringify_friend_ids: true
 		};
 		
