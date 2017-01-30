@@ -19,7 +19,7 @@ Twitter Interface module for MagicMirror<sup>2</sup>.
 			position: 'top_left',
 			config: {
 				maxNumTweets: 5,
-				tweetType: 'followings',
+				streamType: 'followings',
 				api_keys: {
 					consumer_key: 'YOUR CONSUMER KEY',
 					consumer_secret: 'YOUR CONSUMER SECRET',
@@ -34,4 +34,4 @@ Twitter Interface module for MagicMirror<sup>2</sup>.
 | **Option** | **Description** |
 | --- | --- |
 | `maxNumTweets` | The maximum number of tweets to display at any given time.  (0 for unlimited) |
-| `tweetType`	 | The type of tweets to receive. Can be `user` or `followings`. Check the Twitter API for more. |
+| `streamType`	 | The type of API stream to receive. Can be `user` or `followings`. Check the Twitter API for more. |
